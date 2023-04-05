@@ -112,7 +112,7 @@ const tourSchema = new mongoose.Schema({
     guides: Array
 
 
-
+  
 },
 
     {
