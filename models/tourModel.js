@@ -134,6 +134,13 @@ tourSchema.pre('save', function (next) {
     this.slug = slugify(this.name, { lower: true })
     next();
 });
+tourSchema.pre(/^find/, function (next) {
+    this.populate({
+        path: 'guides',
+        select: '-__v -passwordChangedAt'
+    });
+    next();
+});
 
 // tourSchema.pre('save', async function (next) {
 //     const guidesPromise = this.guides.map(async id => await User.findById(id))
