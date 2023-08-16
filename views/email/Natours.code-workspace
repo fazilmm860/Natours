@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "Natours",
+			"path": "../.."
+		},
+		{
+			"name": "views",
+			"path": "../../../complete-node-bootcamp-master/4-natours/after-section-14/views"
+		}
+	],
+	"settings": {}
+}
